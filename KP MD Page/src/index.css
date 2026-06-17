@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system with --color-* OKLCH tokens for Lovable theme compatibility */
+
+@layer base {
+  :root {
+    --font-heading-weight: 600;
+    --font-body-weight: 400;
+
+    /* KristenPalmerMD palette — crisp white with light tan/gray cards */
+    --color-background: oklch(99% 0 0); /* crisp white */
+    --color-foreground: oklch(20% 0.005 60); /* #1F1E1C deep charcoal */
+
+    --color-card: oklch(93% 0.012 80); /* light tan/gray */
+    --color-card-foreground: oklch(20% 0.005 60);
+
+    --color-popover: oklch(99% 0 0);
+    --color-popover-foreground: oklch(20% 0.005 60);
+
+    --color-primary: oklch(50% 0.055 200); /* #2E6F73 muted teal */
+    --color-primary-foreground: oklch(95.5% 0.022 80);
+
+    --color-secondary: oklch(73% 0.105 80); /* #C99A4B warm gold */
+    --color-secondary-foreground: oklch(20% 0.005 60);
+
+    --color-muted: oklch(95% 0.008 80); /* light tan/gray surface */
+    --color-muted-foreground: oklch(45% 0.012 70); /* #6B6359 warm stone */
+
+    --color-accent: oklch(58% 0.145 45); /* #B85C38 burnt orange / rust */
+    --color-accent-foreground: oklch(95.5% 0.022 80);
+
+    --color-destructive: oklch(58% 0.18 30);
+    --color-destructive-foreground: oklch(95.5% 0.022 80);
+
+    --color-border: oklch(90% 0.01 80); /* soft tan/gray border */
+    --color-input: oklch(90% 0.01 80);
+    --color-ring: oklch(50% 0.055 200);
+
+    --radius: 1rem;
+
+    /* Template-specific tokens (not overridden by theme system) */
+    --tag-financing: oklch(78% 0.06 250);
+    --tag-lifestyle: oklch(73% 0.05 155);
+    --tag-community: oklch(62% 0.07 55);
+    --tag-wellness: oklch(76% 0.06 310);
+    --tag-travel: oklch(74% 0.06 220);
+    --tag-creativity: oklch(77% 0.07 350);
+    --tag-clinical: oklch(55% 0.08 150);
+
+    --speaking-navy: oklch(24% 0.058 257);
+    --speaking-navy-foreground: oklch(95% 0.02 80);
+    --speaking-green: oklch(54% 0.111 139);
+    --speaking-green-foreground: oklch(95% 0.02 80);
+    --speaking-blue: oklch(46% 0.094 251);
+    --speaking-blue-foreground: oklch(95% 0.02 80);
+
+    --cream: oklch(92% 0.015 85);
+    --cream-foreground: oklch(25% 0 0);
+    --surface-elevated: oklch(98% 0.012 80);
+    --shadow-soft: oklch(0% 0 0);
+  }
+
+  .dark {
+    --color-background: oklch(18% 0.008 60); /* deep ink */
+    --color-foreground: oklch(94% 0.022 80);
+
+    --color-card: oklch(23% 0.012 60);
+    --color-card-foreground: oklch(94% 0.022 80);
+
+    --color-popover: oklch(18% 0.008 60);
+    --color-popover-foreground: oklch(94% 0.022 80);
+
+    --color-primary: oklch(62% 0.075 200); /* brighter teal */
+    --color-primary-foreground: oklch(18% 0.008 60);
+
+    --color-secondary: oklch(72% 0.115 80); /* gold */
+    --color-secondary-foreground: oklch(18% 0.008 60);
+
+    --color-muted: oklch(28% 0.012 60);
+    --color-muted-foreground: oklch(72% 0.018 70);
+
+    --color-accent: oklch(65% 0.16 45); /* rust */
+    --color-accent-foreground: oklch(18% 0.008 60);
+
+    --color-destructive: oklch(58% 0.18 30);
+    --color-destructive-foreground: oklch(94% 0.022 80);
+
+    --color-border: oklch(30% 0.012 60);
+    --color-input: oklch(30% 0.012 60);
+    --color-ring: oklch(62% 0.075 200);
+
+    /* Dark mode tag colors */
+    --tag-financing: oklch(50% 0.05 250);
+    --tag-lifestyle: oklch(46% 0.04 155);
+    --tag-community: oklch(46% 0.05 55);
+    --tag-wellness: oklch(50% 0.05 310);
+    --tag-travel: oklch(50% 0.05 220);
+    --tag-creativity: oklch(50% 0.06 350);
+    --tag-growth: oklch(50% 0.06 90);
+    --tag-clinical: oklch(45% 0.06 150);
+
+    --speaking-navy: oklch(70% 0.075 257);
+    --speaking-navy-foreground: oklch(18% 0.02 80);
+    --speaking-green: oklch(65% 0.12 139);
+    --speaking-green-foreground: oklch(18% 0.02 80);
+    --speaking-blue: oklch(70% 0.08 251);
+    --speaking-blue-foreground: oklch(18% 0.02 80);
+
+    --cream: oklch(32% 0.008 85);
+    --cream-foreground: oklch(96.5% 0.015 80);
+    --surface-elevated: oklch(24% 0 0);
+    --shadow-soft: oklch(0% 0 0);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body, Inter), system-ui, sans-serif;
+    font-weight: var(--font-body-weight);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-body, Inter), system-ui, sans-serif;
+    font-weight: var(--font-heading-weight);
+    @apply tracking-tight;
+  }
+
+  a, button, input, label {
+    font-family: var(--font-body, Inter), system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .card-hover {
+    @apply transition-all duration-500 hover:scale-[1.02];
+    box-shadow: 0 4px 20px -4px oklch(0% 0 0 / 0.1);
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 20px 40px -10px oklch(0% 0 0 / 0.15);
+  }
+
+  .pill-nav {
+    @apply rounded-full backdrop-blur-lg border;
+    background-color: color-mix(in oklch, var(--color-background) 85%, transparent);
+    border-color: color-mix(in oklch, var(--color-border) 50%, transparent);
+  }
+
+  .floating-button {
+    @apply w-12 h-12 rounded-full bg-card backdrop-blur-sm flex items-center justify-center text-card-foreground hover:bg-card hover:scale-110 transition-all duration-300;
+    box-shadow: 0 4px 12px -2px oklch(0% 0 0 / 0.15);
+  }
+
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out;
+  }
+
+  /* Stagger animations */
+  .stagger-1 { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
+  .stagger-2 { animation-delay: 0.2s; opacity: 0; animation-fill-mode: forwards; }
+  .stagger-3 { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+  .stagger-4 { animation-delay: 0.4s; opacity: 0; animation-fill-mode: forwards; }
+  .stagger-5 { animation-delay: 0.5s; opacity: 0; animation-fill-mode: forwards; }
+  .stagger-6 { animation-delay: 0.6s; opacity: 0; animation-fill-mode: forwards; }
+
+  .tag-financing { @apply bg-[var(--tag-financing)] text-primary; }
+  .tag-lifestyle { @apply bg-[var(--tag-lifestyle)] text-primary; }
+  .tag-community { @apply bg-[var(--tag-community)] text-primary; }
+  .tag-wellness { @apply bg-[var(--tag-wellness)] text-primary; }
+  .tag-travel { @apply bg-[var(--tag-travel)] text-primary; }
+  .tag-creativity { @apply bg-[var(--tag-creativity)] text-primary; }
+  .tag-growth { @apply bg-[var(--tag-growth)] text-primary; }
+  .tag-clinical { @apply bg-[var(--tag-clinical)] text-primary-foreground; }
+}
