@@ -28,7 +28,7 @@ const cards = [
   },
 ];
 
-const EMAIL = "kristen.palmer.md@gmail.com";
+const EMAIL = "kristenpalmermd@gmail.com";
 
 const Contact = () => {
   return (
