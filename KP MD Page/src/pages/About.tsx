@@ -38,7 +38,7 @@ const About = () => {
                     I did not enter medicine through a straight line. As a first-generation college student, navigating higher education took curiosity, resilience, and courage. Each milestone enriched my sense of what it means to serve and care for others — a vantage point no medical school classroom or rotation could provide. It was built instead from lived experience: early childhood education, non-clinical patient care, healthcare administration, allied health, academic research, and the federally funded systems holding our underserved communities together.
                   </p>
                   <p>
-                    That path shaped how I practice. I learned to value the people closest to the work, to notice what systems miss, and to look beyond the official record to understand what is actually happening. Taken together, they made psychiatry the natural choice — and the reason I practice at the intersection of clinical care and the systems that shape it.{"\n"}
+                    That path shaped how I practice. I learned to value the people closest to the work, to notice what systems miss, and to look beyond the official record to understand what is actually happening. Taken together, they made psychiatry the natural choice — and the reason I practice at the intersection of clinical care and the systems that shape it.
                   </p>
                 </div>
               </div>

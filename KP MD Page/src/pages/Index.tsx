@@ -233,7 +233,7 @@ const Index = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:kristenpalmermd@gmail.com" className="hover:text-accent transition-colors">
+                  <a href="mailto:kristen.palmer.md@gmail.com" className="hover:text-accent transition-colors">
                     Email
                   </a>
                 </li>
