@@ -69,7 +69,7 @@ const About = () => {
             {/* Workforce & Systems */}
             <div className="group md:col-span-5 bg-card border border-border p-8 rounded-2xl transition-all duration-500 hover:border-accent/40 hover:-translate-y-1">
               <div className="mb-6">
-                <span className="px-3 py-1 rounded-full border border-accent/30 text-accent text-[10px] uppercase tracking-[0.18em]">FISCMAK: A SYSTEM IN PROGRESS</span>
+                <span className="px-3 py-1 rounded-full border border-accent/30 text-accent text-[10px] uppercase tracking-[0.18em]">FISCMAK · IN DEVELOPMENT</span>
               </div>
               <h2 className="text-2xl tracking-tight mb-4">Workforce &amp; Systems</h2>
               <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
@@ -77,7 +77,7 @@ const About = () => {
                   Alongside clinical work, I focus on physician career and workforce strategy: development and evaluation of the physicians and the institutional design choices that shape care.
                 </p>
                 <p>
-                  This work led me to develop&nbsp;FISCMAK, a physician career infrastructure platform for naming the work medicine often fails to capture — invisible labor, systems judgment, leadership, teaching, and longitudinal growth.
+                  This work led me to develop&nbsp;FISCMAK — physician career infrastructure for naming the full scope of clinical work: invisible labor, systems judgment, leadership, teaching, and longitudinal growth. It is built to support the development already happening in training and practice, with language and structure physicians and programs can share.
                 </p>
               </div>
             </div>

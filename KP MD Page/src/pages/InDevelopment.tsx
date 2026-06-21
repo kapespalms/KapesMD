@@ -18,7 +18,7 @@ const InDevelopment = () => {
             <div className="md:col-span-7">
               <h1 className="text-4xl md:text-5xl tracking-tight mb-5 font-semibold">FISCMAK</h1>
               <p className="text-lg md:text-xl text-foreground leading-snug">
-                Career architecture for physicians — the structured ladders, sponsorship, and longitudinal development of modern professional firms, rebuilt for medicine.
+                Career architecture for physicians — structured development, mentorship, and longitudinal growth designed to complement training and practice.
               </p>
             </div>
           </div>
@@ -29,7 +29,10 @@ const InDevelopment = () => {
             <h2 className="text-2xl lg:text-3xl tracking-tight mb-6">The Thesis</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Medicine has no real career infrastructure. Trainees navigate transitions, mentorship, and career design on hand-me-down advice and luck. FISCMAK names the work medicine fails to capture and gives it a structure that holds across training, the attending years, and the inflection points in between.
+                Medicine invests deeply in clinical training, mentorship, and the skills required to care for patients. What is less fully articulated is shared career architecture: a common language for the work physicians do beyond the note, and durable structure across the transitions from trainee to attending and beyond.
+              </p>
+              <p>
+                FISCMAK is physician career infrastructure designed to complement what programs and institutions already build — giving name to invisible labor, systems judgment, teaching, leadership, and longitudinal growth, and offering a framework physicians and leaders can use together.
               </p>
             </div>
           </div>

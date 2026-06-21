@@ -41,7 +41,7 @@ const Work = () => {
                 FISCMAK
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                A physician career infrastructure platform — borrowing from the playbook of modern professional firms to build durable career architecture for physicians.
+                Physician career infrastructure that complements training and mentorship — giving physicians and programs a shared framework for development across the clinical career.
               </p>
             </div>
           </Link>
